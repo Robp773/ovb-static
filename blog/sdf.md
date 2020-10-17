@@ -1,6 +1,0 @@
----
-path: sf
-date: 2020-10-17T22:06:13.311Z
-title: sdf
----
-dfsdf
