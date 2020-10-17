@@ -1,6 +1,7 @@
 backend:
   name: github
   repo: Robp773/ovb-static
+  branch: main
 media_folder: static/assets
 public_folder: /assets
 collections:
