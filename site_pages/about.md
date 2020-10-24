@@ -2,8 +2,6 @@
 title: About
 page_main_image: /assets/logo.png
 ---
-<!--StartFragment-->
-
 We started One Voice Basketball because we want every kid to experience the joy and satisfaction of being a part of something bigger than themselves. We want kids to experience the satisfaction that comes from investing in their own personal growth and sacrificing so that others can grow as well. Participating on a true team – one that shares a commitment to a common purpose, brings together the complementary skills of all the participants, works towards shared goals and demands accountability to those commitments – is a life changing experience. Teams are like families – they connect us to others and to a larger purpose. Basketball, when played correctly, is a beautiful game and offers one of the best vehicles for individual expression in a team context.
 
 We continue to run One Voice because the Voorhees girls’ basketball program has a unique history that should be sustained for girls in the years to come. It’s tied to the history of our communities as sisters, cousins, neighbors, babysitters and now even aunts and moms played in the program in years past. Many of today’s players grew up watching these players perform. We do it because we love the game of basketball and the opportunities it presents for learning lifelong lessons – committing to work hard for yourself and others, working through frustration and failure, stretching your perceived limits (and finding out you can do more than you think you can do) and learning to trust – people and processes. We do it because others did it for us and gave each of us a gift that cannot be easily repaid. We want to give back because they gave to us.
@@ -79,5 +77,3 @@ Defend the 3 point line using proper close outs. Close out to the baseline shoul
 Know what hurts you –for example, if a player can’t hit a long shot we don’t need to defend outside the boundaries of their abilities. Leaving our zone structure to defend a player who is not a threat to score leaves us vulnerable at the foul line which can lead to easy scoring opportunities.
 
 Communicate. Be aware of the shooters. let your teammates know when offensive players are cutting or relocating. When the zone offense utilizes screens let your teammate know the screen is coming and help if necessary. Use your hands on the screener to establish space for your feet (allowing you to get around the screen vs. trying to push through).
-
-<!--EndFragment-->
