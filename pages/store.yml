@@ -1,0 +1,11 @@
+store_page_title: Store
+store_page_items_list:
+  - item_sizes:
+      - Small
+      - Medium
+      - Large
+    store_item_price: 4
+    store_item_description: Test
+    store_item_name: OVB Magnet
+    store_item_images_list:
+      - /assets/logo.png
