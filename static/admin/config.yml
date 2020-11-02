@@ -14,7 +14,7 @@ collections:
         fields:
           - { name: home_page_title, label: Home Page Title }
           - { name: home_page_intro, label: Home Page Intro, widget: markdown }
-          - label: Home Page Gallery
+          - label: Gallery Images
             name: home_page_gallery
             widget: list
             fields:
