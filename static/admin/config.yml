@@ -183,13 +183,18 @@ collections:
     fields:
       - { name: drill_name, label: Drill Name }
       - { name: date, label: Date, widget: datetime }
-      - { name: drill_media, label: Drill Media, widget: file }
+      - { name: drill_media, label: Drill Media, widget: file, required: false }
       - { name: drill_category, label: Drill Category }
       - {
           name: drill_difficulty,
           label: Drill Difficulty,
           widget: select,
           options: ["Easy", "Moderate", "Hard"],
+        }
+      - {
+          name: drill_instructions,
+          label: Drill Instructions,
+          widget: markdown,
         }
 
   - name: notes
