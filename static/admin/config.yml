@@ -5,12 +5,199 @@ backend:
 media_folder: static/assets
 public_folder: /assets
 collections:
-  - name: blog
-    label: Blog
-    folder: blog
+  - label: "Single Pages"
+    name: "single_pages"
+    files:
+      - label: "Home Page"
+        name: "home_page"
+        file: "pages/home.yml"
+        fields:
+          - { name: home_page_title, label: Home Page Title }
+          - { name: home_page_intro, label: Home Page Intro, widget: markdown }
+          - label: Home Page Gallery
+            name: home_page_gallery
+            widget: list
+            fields:
+              - { label: Image, name: image, widget: image }
+
+      - label: "About Page"
+        name: "about"
+        file: "pages/about.yml"
+        fields:
+          - { name: about_page_title, label: About Page Title }
+          - {
+              name: about_page_intro,
+              label: About Page Intro,
+              widget: markdown,
+            }
+
+          - label: Principle
+            name: ovb_principles
+            widget: list
+            fields:
+              - { label: Principle, name: single_principle, widget: string }
+
+          - label: Philosophy
+            name: ovb_philosophies
+            widget: list
+            fields:
+              - {
+                  label: Philosophy Name,
+                  name: single_philosophy_name,
+                  widget: string,
+                }
+              - {
+                  label: Philosophy Description,
+                  name: single_philosophy_desc,
+                  widget: markdown,
+                }
+
+      - label: "Coaches Page"
+        name: "coaches_page"
+        file: "pages/coaches.yml"
+        fields:
+          - { name: coaches_page_title, label: Coaches Page Title }
+          - label: Resumes
+            name: coaches_page_resumes
+            widget: list
+            fields:
+              - { label: Coach Name, name: single_coach_name, widget: string }
+              - { label: Image, name: image, widget: image, required: false }
+              - { label: Coach Bio, name: single_coach_bio, widget: markdown }
+
+      - label: "Drills Page"
+        name: "drills_page"
+        file: "pages/drills.yml"
+        fields:
+          - { name: drills_page_title, label: Drills Page Title }
+          - {
+              label: Drills Page Text,
+              name: drills_page_text,
+              widget: markdown,
+            }
+
+      - label: Forms Page
+        name: forms_page
+        file: "pages/forms.yml"
+        fields:
+          - { name: forms_page_title, label: Forms Page Title }
+
+          - name: form_list
+            label: Forms
+            widget: list
+            fields:
+              - name: single_form_title
+                label: Form Title
+              - name: form_page_text,
+                label: Form Instructions
+                widget: markdown
+                required: false
+              - name: form_file
+                label: Form File
+                widget: file
+
+      - label: Calendar Page
+        name: calendar_page
+        file: "pages/calendar.yml"
+        fields:
+          - { name: calendar_page_title, label: Calendar Page Title }
+          - name: calendar_page_announcements,
+            label: Announcements
+            widget: markdown
+            required: false
+
+      - name: galleries
+        label: Galleries
+        file: "pages/galleries.yml"
+        fields:
+          - { name: gallery_page_title, label: Galleries Page Title }
+          - name: single_gallery
+            label: Galleries
+            widget: list
+            fields:
+              - { label: "Gallery Title", name: "title", widget: "string" }
+              - {
+                  label: "Gallery Description",
+                  name: "gallery_description",
+                  widget: "string",
+                }
+              - {
+                  label: "Images",
+                  name: "gallery_image",
+                  widget: "list",
+                  field: { label: Image, name: image, widget: image },
+                }
+
+      - name: store_page
+        label: Store Page
+        file: "pages/store.yml"
+        fields:
+          - { name: store_page_title, label: Store Page Title }
+          - name: store_page_items_list
+            label: Store Items
+            widget: list
+            fields:
+              - {
+                  label: "Item Name",
+                  name: "store_item_name",
+                  widget: "string",
+                }
+
+              - {
+                  label: "Item Sizes",
+                  name: "item_sizes",
+                  widget: "list",
+                  required: false,
+                  field: { label: Size, name: item_size },
+                }
+              - { name: store_item_price, label: Item Price, widget: number }
+
+              - {
+                  label: "Item Description",
+                  name: "store_item_description",
+                  widget: "string",
+                  required: false,
+                }
+              - {
+                  label: "Item Images",
+                  name: "store_item_images_list",
+                  widget: "list",
+                  field: { label: Image, name: image, widget: image },
+                }
+
+      - name: scholarships_page
+        label: Scholarships Page
+        file: "pages/scholarships.yml"
+        fields:
+          - { name: scholarships_page_title, label: Scholarships Page Title }
+          - {
+              label: Scholarships Page Text,
+              name: scholarships_page_text,
+              widget: markdown,
+            }
+
+  - name: drills
+    label: Drills
+    folder: drills
     create: true
     fields:
-      - { name: path, label: Path }
+      - { name: drill_name, label: Drill Name }
       - { name: date, label: Date, widget: datetime }
-      - { name: title, label: Title }
-      - { name: body, label: Body, widget: markdown }
+      - { name: drill_media, label: Drill Media, widget: file }
+      - { name: drill_category, label: Drill Category }
+      - {
+          name: drill_difficulty,
+          label: Drill Difficulty,
+          widget: select,
+          options: ["Easy", "Moderate", "Hard"],
+        }
+
+  - name: notes
+    label: Notes
+    folder: notes
+    create: true
+    fields:
+      - { name: note_title, label: Note Title }
+      - { name: date, label: Date, widget: datetime }
+      - { name: note_category, label: Note Category }
+      - { name: note_text, label: Note Text, widget: markdown }
