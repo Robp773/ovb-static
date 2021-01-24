@@ -88,7 +88,7 @@ collections:
             fields:
               - name: single_form_title
                 label: Form Title
-              - name: form_page_text,
+              - name: form_page_text
                 label: Form Instructions
                 widget: markdown
                 required: false
